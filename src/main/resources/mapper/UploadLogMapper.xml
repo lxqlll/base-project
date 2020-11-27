@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace=".dao.LogDao">
+
+    <resultMap id="BaseResultMap" type="com.lxq.upload.module.entity.Log">
+        <!--@Table upload_log-->
+        <result property="logId" column="log_id" jdbcType="INTEGER"/>
+        <result property="logUrl" column="log_url" jdbcType="VARCHAR"/>
+        <result property="logParams" column="log_params" jdbcType="VARCHAR"/>
+        <result property="logStatus" column="log_status" jdbcType="INTEGER"/>
+        <result property="logMessage" column="log_message" jdbcType="mediumtext"/>
+        <result property="logMethod" column="log_method" jdbcType="VARCHAR"/>
+        <result property="logTime" column="log_time" jdbcType="INTEGER"/>
+        <result property="logResult" column="log_result" jdbcType="mediumtext"/>
+        <result property="logIp" column="log_ip" jdbcType="VARCHAR"/>
+        <result property="createdTime" column="created_time" jdbcType="TIMESTAMP"/>
+        <result property="createdBy" column="created_by" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+</mapper>
